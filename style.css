@@ -1,0 +1,262 @@
+/* 🌈 Gaya Umum */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(180deg, #e8f0ff, #f5f7ff);
+  color: #444;
+  margin: 0;
+  padding: 0;
+}
+
+/* 🌐 HEADER */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center; /* Menu akan berada di tengah */
+    align-items: center;
+    padding: 15px 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    gap: 40px; /* Jarak antara logo dan menu */
+}
+
+header h1 {
+    font-size: 24px;
+    color: #007bff;
+    letter-spacing: 1px;
+}
+
+header h1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo {
+    height: 40px;
+    border-radius: 50%;
+}
+
+}
+
+.logo {
+  height: 45px;
+  margin-right: 10px;
+}
+
+/* 🔗 NAVIGASI */
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #ff6600;
+}
+
+/* 🌟 KONTEN UTAMA */
+main {
+  margin-top: 120px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* 🧩 CARD KONTEN */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08);
+  padding: 30px 40px;
+  margin: 20px 0;
+  width: 80%;
+  max-width: 900px;
+  animation: fadeIn 0.6s ease;
+}
+
+.card h2 {
+  color: #007bff;
+  font-size: 24px;
+  border-left: 5px solid #007bff;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+.card p, .card li {
+  line-height: 1.8;
+  color: #333;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* 🖼️ GALERI */
+.galeri {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  padding: 40px;
+}
+
+.galeri img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transition: transform 0.4s ease, box-shadow 0.3s ease;
+}
+
+.galeri img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* 🦶 FOOTER */
+footer {
+  background: #1b1f3b;
+  color: #ffffff;
+  padding: 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+footer div {
+  flex: 1 1 300px;
+  margin: 15px;
+}
+
+footer h3 {
+  color: #ff9900;
+  margin-bottom: 10px;
+}
+
+footer p {
+  color: #ddd;
+  line-height: 1.6;
+}
+
+footer a {
+  color: #ffcc66;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+footer .copyright {
+  text-align: center;
+  margin-top: 20px;
+  color: #bbb;
+  font-size: 14px;
+}
+
+/* 🌅 Hero Section */
+.hero {
+  background: linear-gradient(120deg, #007bff, #6a5acd);
+  color: white;
+  text-align: center;
+  padding: 120px 20px;
+  border-bottom-left-radius: 60px;
+  border-bottom-right-radius: 60px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.hero-text h2 {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.hero-text span {
+  color: #ffeb3b;
+}
+
+.hero-text p {
+  font-size: 18px;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 25px auto;
+}
+
+.btn-primary {
+  display: inline-block;
+  background: #ffffff;
+  color: #007bff;
+  padding: 12px 30px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background: #ff6600;
+  color: white;
+}
+
+/* Highlight Card */
+.highlight-card {
+  background: linear-gradient(135deg, #f0f6ff, #ffffff);
+  border-left: 6px solid #007bff;
+}
+
+.tentang-lpk {
+    background: #ffffff;
+    margin: 60px auto;
+    padding: 40px 60px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    max-width: 1000px;
+}
+
+.tentang-lpk h2 {
+    color: #007bff;
+    font-size: 1.8em;
+    border-left: 6px solid #007bff;
+    padding-left: 12px;
+    margin-bottom: 20px;
+}
+
+.tentang-lpk p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #333;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+/* === Mengatur jarak bawah agar footer menempel === */
+section:last-of-type {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.tentang-lpk {
+    margin-bottom: 0 !important;
+    padding-bottom: 30px;
+}
+
+footer {
+    margin-top: 0 !important;
+}
+
+body {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
